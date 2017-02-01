@@ -231,6 +231,33 @@ a:hover {
  slider
 =========================*/
 
+.lead-header {
+  line-height: 0.5;
+  text-align: center;
+}
+.lead-header span {
+  display: inline-block;
+  position: relative;  
+}
+.lead-header span:before,
+.lead-header span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #000043;
+  border-top: 1px solid #000043;
+  top: 0;
+  width: 220px;
+}
+.lead-header span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.lead-header span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
 .no-margin {
   margin: 0;
   padding: 0;
@@ -534,14 +561,32 @@ a:hover {
     padding: 0;
 }
 
+.footer-links a {
+    color: #fff;
+}
+
+.footer-links h3 {
+    color: #fff;
+}
+
+.footer-links a:hover {
+    color: #999;
+	-webkit-transition: color 300ms,
+  -moz-transition: color 300ms,
+  -o-transition:  color 300ms, 
+  transition:  color 300ms;
+}
+
+
+
 .footer .social-network i, .copyright {
-    color: #333333;
+    color: #fff;
 }
 
 
 hr{
     
-    border-color: #333333;
+    border-color: #fff;
     
 }
 
